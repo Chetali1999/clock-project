@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ClockHeading from './Components/ClockHeading';
+import ClockSlogan from './Components/ClockSlogan';
+import CurrentTime from './Components/CurrentTime';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <center>
+      <ClockHeading />
+      <ClockSlogan />
+      <CurrentTime />
+    </center>
   );
 }
 
